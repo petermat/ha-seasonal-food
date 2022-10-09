@@ -1,0 +1,20 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Seasonal Food
+version: "1.0.0"
+slug: seasonal-food
+description: List of local seasonal food per Country
+url: "https://github.com/petermat/ha-seasonal-food"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+image: "ghcr.io/home-assistant/{arch}-addon-example"
